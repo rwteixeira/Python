@@ -1,0 +1,6 @@
+# Matriz
+dados = [[],[],[]]
+while True:
+
+
+

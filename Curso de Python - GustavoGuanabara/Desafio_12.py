@@ -1,0 +1,6 @@
+PrecoAtual = float(input('Entre com valor atual: '))
+desconto = float(0.05)
+print('*'*30)
+NovoPreco = PrecoAtual-(PrecoAtual * desconto)
+print('Preço Atual é {}\nO desconto é de {}\nO novo preço é de {}'.format(PrecoAtual,desconto,NovoPreco))
+print('*'*30)
