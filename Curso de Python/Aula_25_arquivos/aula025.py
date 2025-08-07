@@ -10,7 +10,7 @@ nome_arquivo = input("Nome do arquivo: ")
 
 with open(nome_arquivo, 'w') as arquivo:
     while True:
-        palavra = input("Digite um palavra: \033[35m/exit\033[m para encerrar: ").strip()
+        palavra = input("Digite um palavra: \033[33m/exit\033[m para encerrar: ").strip()
         if palavra == '/exit':
             break
         arquivo.write(f"{palavra}\n")
