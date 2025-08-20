@@ -26,12 +26,13 @@ def mostrar_usuarios():
 
 while True:
     # Menu simples
-    print("--- ESCOLHA UMA OPÇÃO ---")
+    print()
+    print(f"{cores['azul']}--- ESCOLHA UMA OPÇÃO ---{cores['limpa']}")
     print("1 - Ver status do servidor")
     print("2 - Ver contas de usuários")
     print("3 - Sair")
     print()
-    opcao = input("Digite o número da opção: ")
+    opcao = input(f"{cores['azul']}Digite o número da opção: {cores['limpa']}")
 
     if opcao == "1":
         mostrar_status()
