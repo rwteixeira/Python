@@ -1,4 +1,5 @@
 import requests
+import json
 
 cores = {'limpa':'\033[m',
          'branco':'\033[30m',
@@ -8,14 +9,16 @@ cores = {'limpa':'\033[m',
          'azul':'\033[34m'}
 
 def mostrar_status():
-    req = requests.get("http://177.84.130.204:5000/status")
+    req = requests.get("http://177.84.130.204:5000/status") # Criação de endpoint
     dados = req.json()
     print("\n--- STATUS DO SERVIDOR ---")
     for chave, valor in dados.items():
         print(f"{chave:<20}: {valor}")
+    with open("status_servidor.json", "w") as f:
+        json.dump(dados, f, indent=4)
 
 def mostrar_usuarios():
-    req = requests.get("http://177.84.130.204:5000/usuarios_linux")
+    req = requests.get("http://177.84.130.204:5000/usuarios_linux") # Criação de endpoint
     usuarios = req.json()
     print("\n--- CONTAS DE USUÁRIOS ---")
     for usuario in usuarios:
