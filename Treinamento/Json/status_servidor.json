@@ -1,12 +1,12 @@
 {
     "arquitetura": "x86_64",
-    "cpu_percent": 0.8,
-    "disco_percent": 41.2,
+    "cpu_percent": 0.5,
+    "disco_percent": 41.4,
     "disco_total_GB": 45.02,
-    "disco_usado_GB": 18.54,
+    "disco_usado_GB": 18.65,
     "memoria_total_MB": 3665.1,
-    "memoria_usada_MB": 2141.09,
+    "memoria_usada_MB": 2594.46,
     "sistema": "Linux",
-    "uptime": "57 days, 21:26:20",
+    "uptime": "58 days, 0:35:32",
     "versao": "#1 SMP Tue Aug 8 21:30:09 UTC 2023"
 }
