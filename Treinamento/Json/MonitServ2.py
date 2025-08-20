@@ -1,3 +1,14 @@
+# Este programa permite acessar informações no formato JSON do servidor Virtual Linux, 
+# sob o endereço IP: 177.84.130.204. As informações disponíveis são oriundas do próprio
+# sistema, sem nada de especial, pois, trata-se de laboratório. 
+# No servidor:  token: estático
+#               Rotas:  /                   - Mensagem de boas-vindas
+#                       /status             - Informações de hardware
+#                       /usuarios_linux     - Usuários do Linux
+#
+# Em execução no servidor Linux: monitServer.py
+# 20/08/2025 - RWT & Copilot (Codi)
+
 import requests
 import json
 
